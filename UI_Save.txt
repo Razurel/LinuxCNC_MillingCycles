@@ -1,0 +1,46 @@
+# Milling Cycles - UI_Save.txt
+# Standardwerte der SpinBoxen
+# Format: key=value
+# Beim Start der GUI werden diese Werte geladen und auf die SpinBoxen gesetzt.
+# Beim Druecken eines VORSCHAU-Buttons werden die aktuellen Werte gespeichert.
+
+# RUNDLOCH
+circle_diameter=50.0
+circle_depth=20.0
+circle_cutter_diameter=10.0
+circle_pitch=3.0
+circle_start_z=3.0
+circle_retract=0.1
+circle_feed_approach=100.0
+circle_feed_mill=200.0
+
+# RECHTECK
+rectangle_cutter_diameter=10.0
+rectangle_width=100.0
+rectangle_depth=50.0
+rectangle_z_step=3.0
+rectangle_milling_depth=10.0
+rectangle_start_z=3.0
+rectangle_feed_approach=100.0
+rectangle_feed_mill=200.0
+
+# LINIE
+line_cutter_diameter=10.0
+line_length=100.0
+line_depth=10.0
+line_z_step=3.0
+line_start_z=3.0
+line_angle=0.0
+line_feed_approach=100.0
+line_feed_mill=200.0
+
+# OBERFLAECHE
+surface_cutter_diameter=10.0
+surface_z_step=3.0
+surface_width=100.0
+surface_depth=100.0
+surface_milling_depth=10.0
+surface_start_z=3.0
+surface_overlap=20.0
+surface_feed_approach=100.0
+surface_feed_mill=200.0
