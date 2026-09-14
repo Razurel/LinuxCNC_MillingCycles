@@ -1,0 +1,63 @@
+( ========================================== )
+( LINIE - Fraeszyklen                     )
+( ========================================== )
+( Fraeserdurchmesser: 10.000 mm )
+( Schnittlaenge     : 100.000 mm )
+( Fraestiefe        : 10.000 mm )
+( Z-Zustellung      : 3.000 mm )
+( Start Z           : 3.000 mm )
+( Winkel            : 0.0 Grad )
+( 0 Grad = hinten / 90 Grad = rechts )
+( 180 Grad = vorne / 270 Grad = links )
+( ========================================== )
+
+G21
+G17
+G90
+F200.000
+
+( Startposition )
+G0 X0.000000 Y0.000000
+G0 Z3.000000
+
+( Zustellung Z-3.000 )
+F100.000
+G1 Z-3.000000
+F200.000
+
+G1 X0.000000 Y100.000000
+
+( Zustellung Z-6.000 )
+F100.000
+G0 Z3.000000
+G0 X0.000000 Y0.000000
+G1 Z-6.000000
+F200.000
+
+G1 X0.000000 Y100.000000
+
+( Zustellung Z-9.000 )
+F100.000
+G0 Z3.000000
+G0 X0.000000 Y0.000000
+G1 Z-9.000000
+F200.000
+
+G1 X0.000000 Y100.000000
+
+( Zustellung Z-10.000 )
+F100.000
+G0 Z3.000000
+G0 X0.000000 Y0.000000
+G1 Z-10.000000
+F200.000
+
+G1 X0.000000 Y100.000000
+
+( Z zuerst hoch )
+G53 G0 Z2.000
+
+( X/Y erst nach Z-Rueckzug )
+G53 G0 X0.000 Y0.000
+
+M2
