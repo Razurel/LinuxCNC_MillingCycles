@@ -48,12 +48,13 @@ auf einer 3-Achs-Maschine.
     EMBED_TAB_COMMAND Startet GladeVCP mit dem Haupt-Handler und der UI.
     EMBED_TAB_LOCATION Anordnung des Reiters in AXIS (north / south / east / west).
     
-    Der Komponentname hinter -c (milling_cycles) ist fest vorgegeben – die G-Code-Generatoren lesen
-    ihre Pins über diesen Namen (halcmd getp milling_cycles.circle_diameter usw.). Nur umbenennen,
-    wenn der Name gleichzeitig in allen Dateien geändert wird.
+    Der Komponentname hinter -c (milling_cycles) ist fest vorgegeben – die G-Code-Generatoren 
+    lesen ihre Pins über diesen Namen (halcmd getp milling_cycles.circle_diameter usw.).
+    Nur umbenennen, wenn der Name gleichzeitig in allen Dateien geändert wird.
     
-    Liegt der Ordner nicht direkt im Konfigordner, kann auch ein absoluter Pfad eingetragen werden,
-    zum Beispiel:
+    Liegt der Ordner nicht direkt im Konfigordner,
+    kann auch ein absoluter Pfad eingetragen werden.
+    Zum Beispiel:
     EMBED_TAB_COMMAND = gladevcp -c milling_cycles -u
     /home/$USER/linuxcnc/configs/MH22_Extra/MillingCycles/milling_cycles.py
     /home/$USER/linuxcnc/configs/MH22_Extra/MillingCycles/milling_cycles.ui
