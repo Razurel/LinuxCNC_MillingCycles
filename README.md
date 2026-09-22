@@ -35,11 +35,12 @@ auf einer 3-Achs-Maschine.
     zusammenbleiben und der Pfad anschließend in der INI eingetragen wird. 
   
   3.2 INI-Datei anpassen
-    In der Konfigurationsdatei (z. B. MH22_Extra.ini) im Abschnitt [DISPLAY] ergänzen:
-  
+      In der Konfigurationsdatei (z. B. MH22_Extra.ini) im Abschnitt [DISPLAY] ergänzen:
+    
     [DISPLAY]
     EMBED_TAB_NAME = MillingCycles
-    EMBED_TAB_COMMAND = gladevcp -c milling_cycles -u MillingCycles/milling_cycles.py MillingCycles/milling_cycles.ui
+    EMBED_TAB_COMMAND = gladevcp -c milling_cycles -u MillingCycles/milling_cycles.py
+     MillingCycles/milling_cycles.ui
     EMBED_TAB_LOCATION = north
     
     Parameter Bedeutung
@@ -56,7 +57,7 @@ auf einer 3-Achs-Maschine.
     EMBED_TAB_COMMAND = gladevcp -c milling_cycles -u
     /home/$USER/linuxcnc/configs/MH22_Extra/MillingCycles/milling_cycles.py
     /home/$USER/linuxcnc/configs/MH22_Extra/MillingCycles/milling_cycles.ui
-    
+      
   3.3 HAL-Datei
     Keine Änderung nötig. Die HAL-Pins (milling_cycles.*) werden automatisch erzeugt, sobald der
     Reiter geladen wird. Alle Werte werden nur gelesen (halcmd getp), es müssen keine net- oder
